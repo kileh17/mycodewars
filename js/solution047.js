@@ -1,28 +1,19 @@
-let counter = 0
-let arrayOfSheep = [true,  true,  true,  false,
-    true,  true,  true,  true ,
-    true,  false, true,  false,
-    true,  false, false, true ,
-    true,  true,  true,  true ,
-    false, false, true,  true]
 
-arrayOfSheep.forEach(element => {
-    if(element == true){
-        counter += 1
-    }
-});
-console.log(counter)
-// Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+// You'll be passed an array of objects (list) - you must sort them in descending order based on the value of the specified property (sortBy).
 
-// For example,
+// Example
+// When sorted by "a", this:
 
-// [true,  true,  true,  false,
-//   true,  true,  true,  true ,
-//   true,  false, true,  false,
-//   true,  false, false, true ,
-//   true,  true,  true,  true ,
-//   false, false, true,  true]
-// The correct answer would be 17.
+return list.sort(function(a, b){
+    return a[sortBy] < b[sortBy];  
+  })
+console.log(sorted)
+// should return:
 
-// Hint: Don't forget to check for bad values like null/undefined
-
+// [
+//   {"a": 4, "b": 12},
+//   {"a": 3, "b": 2},
+//   {"a": 2, "b": 40},
+//   {"a": 1, "b": 3}
+// ]
+// The values will always be numbers, and the properties will always exist.
